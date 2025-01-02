@@ -22,7 +22,7 @@ class Node implements Comparable<Node>{
 public class Main {
 
     static int[][] matrix;
-    static boolean[][] visited;
+
     static int[][] cost;
     static int[] dr = new int[]{0, 0, -1, 1};
     static int[] dc = new int[]{-1, 1, 0, 0};
@@ -44,7 +44,7 @@ public class Main {
             if (n == 0) break;
 
             matrix = new int[n][n];
-            visited = new boolean[n][n];
+
             cost = new int[n][n];
 
             for (int i = 0; i < n; i++) {
@@ -81,8 +81,7 @@ public class Main {
             int c = current.col;
             int currentCost = current.cost;
 
-            if (visited[r][c]) continue;
-            visited[r][c] = true;
+
 
             for (int i = 0; i < 4; i++) {
                 int nr = r + dr[i];
