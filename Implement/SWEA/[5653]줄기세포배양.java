@@ -52,8 +52,8 @@ public class Main {
             int k = Integer.parseInt(st.nextToken());
 
 
-            int gridHeight = n + 2 * k + 100;
-            int gridWidth = m + 2 * k + 100;
+            int gridHeight = n + 2 * k
+            int gridWidth = m + 2 * k
 
             int[][] grid = new int[gridHeight][gridWidth];
             ArrayList<Cell> cells = new ArrayList<>();
